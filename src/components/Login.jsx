@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { LoginUser, reset } from "../features/authSlice";
+import { LoginUser, RegisterUser, reset } from "../features/authSlice";
 
 const Login = () => {
   const [name, setName] = useState("");
@@ -52,9 +52,6 @@ const Login = () => {
                     {isLoading ? "Loading..." : "Login"}
                   </button>
                 </div>
-                <a className="button is-info is-fullwidth" href="/registration">
-                  Registration
-                </a>
               </form>
             </div>
           </div>
